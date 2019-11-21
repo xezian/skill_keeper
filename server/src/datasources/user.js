@@ -43,11 +43,11 @@ class UserAPI extends DataSource {
     });
     return skills && skills[0] ? skills[0] : null;
   }
-  async insertSkill({ name: nameArg }) {
+  async insertSkill({ name }) {
     const userId = this.context.user.id;
     if (!userId) return;
-    const res = await this.store.skills.create({ name: nameArg, user: userId });
-    return res ? res : null;
+    const res = await this.store.skills.create({ name, userId: userId });
+    return res ? { id: res.id, success: 1, message: "good stuff" } : null;
   }
 }
 

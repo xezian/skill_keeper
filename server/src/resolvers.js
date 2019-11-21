@@ -11,6 +11,6 @@ module.exports = {
       if (user) return Buffer.from(email).toString("base64");
     },
     insertSkill: (_, { name }, { dataSources }) =>
-      dataSources.userAPI.insertSkill(name)
+      dataSources.userAPI.insertSkill({ name })
   }
 };

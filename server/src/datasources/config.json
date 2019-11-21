@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "skill_master",
+    "database": "skill_keeper",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

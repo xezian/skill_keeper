@@ -1,5 +1,5 @@
 {
-  "name": "skills-example",
+  "name": "skill_keeper",
   "version": "1.0.0",
   "description": "graphql-with-mysql-sequelize-skills-example",
   "main": "src/index.js",

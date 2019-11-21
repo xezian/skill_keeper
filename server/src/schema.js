@@ -12,7 +12,7 @@ const typeDefs = gql`
 
   type Skill {
     id: ID!
-    name: String
+    name: String!
     user: User!
   }
 
